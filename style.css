@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --gray: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  /*Necessário para liberar place-items, gap e outras propriedades (display: grid)*/
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.avatar {
+  width: 10rem; /*Rem= Width(px)/font(px)*/
+  margin: 11.5rem auto 0; /*184px/16*/
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+/*Nível de imagem > significa que está no primeiro nível*/
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  /*https://bennettfeely.com/clippy/*/
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 0.25rem;
+  color: var(--gray);
+
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+
+  /*Elemento ao lado do outro no Eixo Vertical*/
+  display: flex;
+  /* Caso quisesse alinhar em coluna, deveria ser utilizado o flex-direction
+  flex-direction: column;
+  */
+  gap: 0.5rem;
+  justify-content: center;
+}

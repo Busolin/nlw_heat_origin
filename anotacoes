@@ -1,0 +1,66 @@
+Dia 01 {
+  HTML
+
+  HyperText - Hypertexto
+  Markup - Marcação
+  Language - Linguagem
+
+  Https - Http seguro
+
+}
+
+Dia 02 {
+  Aninhamento - Tags devem seguir a abertura e o fechamento
+  Aninhamento incorreto: 
+  <div>
+    <h1>
+    </div>
+  </h1>
+  
+  CSS Specify:
+    1° Inline css (<a style=""></a>)
+    2° ID
+    3° Class
+    4° Selector
+  
+  Text Align vs Justify Content:
+    Text Align só serve para texto. Quando colocado flex,
+    passa a utilizar o justify content.
+}
+
+Dia 03 {
+  Fluxo natural da aplicação:
+    Esquerda-direita, cima pra baixo.
+  
+  Javascript no Head: primeiro a ser executado, não renderiza antes.
+  No body, renderizado depois da página.
+
+  Objeto:
+    user = {
+      name: "Victor Busolin",
+      phone: 9972322195,
+      accept: true
+    }
+  
+  Dom: Document Object Model,
+
+  Boas práticas:
+    camelCase
+    PascalCase
+    snake_case
+
+  Id: Sempre único
+}
+
+Dia 04{
+  Arrow function
+
+  argumento => {}
+
+  2 argumentos
+  (arg1, arg2) => {}
+
+  Sem argumentos
+
+  () => {}
+}
