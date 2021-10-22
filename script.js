@@ -22,8 +22,6 @@ function changeSocialMediaLinks() {
   //Por ser ID, pode ser utilizado apenas o ID, sem necessidade de utilizar o document.getElementById userName.textContent = 'Cleber Poggers'
 }
 
-changeSocialMediaLinks()
-
 //Buscar informações da API do GitHub
 function getGitHubProfileInfos() {
   const url = `https://api.github.com/users/${socialMedias.github}`
